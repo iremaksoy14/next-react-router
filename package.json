@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start:dev": "nodemon server.js",
+    "start:prod": "SET NODE_ENV=production & nodemon server.js"
+    
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
